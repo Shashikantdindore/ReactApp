@@ -8,6 +8,8 @@ import Services from './Customer/compnents/Pages/HomePage/Services';
 import Product1 from './Customer/compnents/Pages/productPage/Product1';
 import LoginPage from './Customer/compnents/LoginRegister/Login';
 import SignupPage from './Customer/compnents/LoginRegister/Registration';
+import Preview from './Customer/compnents/Pages/PreviewPage/Preview';
+import exideData from './Data/ExideData';
 
 
 
@@ -22,6 +24,7 @@ function App() {
         <Route path="/Products" element={<Product1  />} />
         <Route path="/Login" element={<LoginPage />} />
         <Route path="/Register" element={<SignupPage />} />
+        <Route path="/Preview" element={<Preview item ={exideData} />} />
       </Routes>
       <Footer />
     </BrowserRouter>
